@@ -11,6 +11,7 @@ fecha = dt.now()
 tz = pytz.timezone('UTC')
 fecha = fecha.replace(tzinfo=tz)
 sr, ss, tr = get_sunrise_sunset_transit(latitud, longitud, fecha, SUN_ZENITH_ASTRONOMICAL_TWILIGHT)
+
 # Horario de verano
 sr = sr + timedelta(hours=1)
 ss = ss + timedelta(hours=1)
