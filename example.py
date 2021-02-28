@@ -20,9 +20,8 @@ tz = pytz.timezone('UTC')
 date = date.replace(tzinfo=tz)
 
 #SUNRISE SUNSET
-
 sr, ss, tr = get_sunrise_sunset_transit(obsLat, obsLon, date, SUN_ZENITH_SUNRISE_SUNSET)
-print("ASTRONOMICAL TWILIGHT")
+print("SUNRISE SUNSET")
 print('sunrise: ', sr.strftime("%Y-%m-%d %H:%M:%S"))
 print('sunset:', ss.strftime("%Y-%m-%d %H:%M:%S"))
 print('transit:', tr.strftime("%Y-%m-%d %H:%M:%S"))
@@ -30,7 +29,6 @@ print('transit:', tr.strftime("%Y-%m-%d %H:%M:%S"))
 
 #ASTRONOMICAL TWILIGHT
 sr, ss, tr = get_sunrise_sunset_transit(obsLat, obsLon, date, SUN_ZENITH_ASTRONOMICAL_TWILIGHT)
-
 print("ASTRONOMICAL TWILIGHT")
 print('sunrise: ', sr.strftime("%Y-%m-%d %H:%M:%S"))
 print('sunset:', ss.strftime("%Y-%m-%d %H:%M:%S"))
