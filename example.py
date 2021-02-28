@@ -12,8 +12,8 @@ SUN_ZENITH_NAUTICAL_TWILIGHT = 2 # Nautical twilights
 SUN_ZENITH_ASTRONOMICAL_TWILIGHT = 3 # Astronomical twilights
 
 #ADD LONGITUDE-LATITUDE
-obsLon = -17.778  #lon is negative to the west.
-obsLat = 28.606
+obsLon = longitude  #lon is negative to the west.
+obsLat = latitude
 
 date = dt.now()
 tz = pytz.timezone('UTC')
